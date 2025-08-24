@@ -1,6 +1,9 @@
 import 'package:encrypt/encrypt.dart' as Keys;
-var key = Keys.Key.fromUtf8("12345678901234567890123456789012");
-var iv = Keys.IV.fromUtf8("12345678");
+// var key = Keys.Key.fromUtf8("12345678901234567890123456789012");
+// var iv = Keys.IV.fromUtf8("12345678");
+
+final key = Keys.Key.fromLength(32);
+final iv = Keys.IV.fromLength(8);
 class OurEncryptor{
 
 
